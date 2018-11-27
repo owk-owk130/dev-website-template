@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="<%- config.description %>">
+        <meta name="keywords" content="<%- config.keywords %>">
+        <meta property="og:title" content="<%- config.title %>">
+        <meta property="og:description" content="<%- config.description %>" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="<%- config.url %>" />
+        <meta property="og:image" content="<%- config.img %>" />
+        <meta name="twitter:card" content="summary" />
+        <% config.css.forEach(function (value, key) { %>
+        <link rel="stylesheet" href="<%- value %>">
+        <% }); %>
+        <title>
+            <%- config.title %>
+        </title>
+    </head>
+
+    <body>

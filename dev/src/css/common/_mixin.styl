@@ -1,0 +1,39 @@
+@import "_variables"
+
+
+//breakpoint
+bk1(){
+    @media screen and (max-width: PC_BK_WIDTH) {
+        {block}
+    }
+}
+
+tb(){
+    @media screen and (max-width: TB_WIDTH) {
+        {block}
+    }
+}
+
+sp(){
+    @media screen and (max-width: SP_WIDTH) {
+        {block}
+    }
+}
+
+iphone5(){
+    @media screen and (max-width: IPHONE5_WIDTH) {
+        {block}
+    }
+}
+
+//clearfix
+clearfix(){
+    clear both
+    &:after {
+        content ""
+        display table
+        clear both
+    }
+}
+
+
