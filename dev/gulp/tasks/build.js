@@ -5,7 +5,7 @@ const
 gulp.task('build', function (callback) {
     return runSequence(
         'b:clean',
-        ['b:ejs', 'b:sass', 'b:webpack', 'b:imagemin'],
+        ['b:ejs', 'b:stylus', 'b:webpack', 'b:imagemin'],
         'b:copy',
         callback
     );

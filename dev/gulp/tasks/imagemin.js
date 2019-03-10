@@ -16,5 +16,5 @@ gulp.task('b:imagemin', function () {
             })]
         ))
         .pipe(imagemin())
-        .pipe(gulp.dest(config.dir.build));
+        .pipe(gulp.dest(config.dir.dist));
 });

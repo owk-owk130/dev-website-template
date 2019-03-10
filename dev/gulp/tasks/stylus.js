@@ -32,5 +32,5 @@ gulp.task('b:stylus', function () {
             }),
             require('css-mqpacker'),
         ]))
-        .pipe(gulp.dest(config.dir.build));
+        .pipe(gulp.dest(config.dir.dist));
 });
