@@ -22,6 +22,9 @@ module.exports = {
     stylus: {
         src: [baseConfig.assets + '/**/css/**/*.styl', '!' + baseConfig.dev + '/**/css/**/_*.styl']
     },
+    imagemin: {
+        src: [baseConfig.assets + '/**/images/**']
+    },
     watch: {
         dir: [
             baseConfig.dev + '/**/*',
